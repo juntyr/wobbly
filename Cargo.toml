@@ -1,6 +1,6 @@
 [package]
 name = "wobbly"
-description = "Derivable const trait to view and compare the layout of a struct, union, or enum."
+description = "wobbly-owned reference counting pointers that mostly behave like Weak but can also keep a value alive"
 version = "0.1.0"
 edition = "2021"
 authors = ["Juniper Tyree <juniper.tyree@helsinki.fi>"]
