@@ -8,7 +8,7 @@ documentation = "https://docs.rs/wobbly/"
 homepage = "https://github.com/juntyr/wobbly"
 repository = "https://github.com/juntyr/wobbly"
 readme = "README.md"
-keywords = ["arc", "rc", "weak", "own", "reference", "counting", "pointer"]
+keywords = ["arc", "rc", "weak", "reference-counting"]
 license = "MIT OR Apache-2.0"
 rust-version = "1.56"
 
