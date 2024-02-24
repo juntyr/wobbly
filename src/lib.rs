@@ -16,7 +16,17 @@
 //! [Rust Doc Main]: https://img.shields.io/badge/docs-main-blue
 //! [docs]: https://juntyr.github.io/wobbly/wobbly
 //!
-//! `wobbly`
+//! `wobbly` provides the single-threaded [`rc::Wobbly<T>`](rc::Wobbly) and
+//! thread-safe [`sync::Wobbly<T>`](sync::Wobbly) reference-counting pointers
+//! that are similar to `Weak` but provide wobbly-shared ownership of a value
+//! of type T, allocated on the heap. Unlike `Weak` pointers, a group of
+//! `Wobbly` pointers shares one owning (strong) pointer that is released when
+//! the first `Wobbly` of the group is dropped, and `Wobbly` pointers can thus
+//! keep a value alive like [`std::rc::Rc`] or [`std::sync::Arc`] but can also
+//! break cycles by being a non-owning pointer like [`std::rc::Weak`] or
+//! [`std::sync::Weak`].
+//!
+//! See the [`rc`] and [`sync`] modules for more details.
 
 #![deny(clippy::complexity)]
 #![deny(clippy::correctness)]
@@ -25,7 +35,7 @@
 #![deny(clippy::perf)]
 #![deny(clippy::style)]
 #![deny(clippy::suspicious)]
-// #![deny(missing_docs)] FIXME
+#![warn(missing_docs)]
 #![cfg_attr(not(feature = "std"), no_std)]
 
 #[cfg(not(feature = "std"))]

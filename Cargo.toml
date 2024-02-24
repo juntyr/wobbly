@@ -16,3 +16,6 @@ rust-version = "1.56"
 
 [features]
 std = []
+
+[package.metadata.docs.rs]
+features = ["std"]
