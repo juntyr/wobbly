@@ -20,7 +20,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        rust: [nightly]
+        rust: [1.56, stable, nightly]
 
     steps:
       - name: Checkout the Repository
@@ -47,7 +47,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        rust: [nightly]
+        rust: [1.56, stable, nightly]
 
     steps:
       - name: Checkout the Repository
@@ -93,7 +93,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        rust: [nightly]
+        rust: [1.56, stable]
 
     steps:
       - name: Checkout the Repository
