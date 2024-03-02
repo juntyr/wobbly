@@ -5,7 +5,7 @@
 //! [workflow]: https://github.com/juntyr/wobbly/actions/workflows/ci.yml?query=branch%3Amain
 //!
 //! [MSRV]: https://img.shields.io/badge/MSRV-1.56.0-blue
-//! [repo]: https://github.com/juntyr/const-type-layout
+//! [repo]: https://github.com/juntyr/wobbly
 //!
 //! [Latest Version]: https://img.shields.io/crates/v/wobbly
 //! [crates.io]: https://crates.io/crates/wobbly
