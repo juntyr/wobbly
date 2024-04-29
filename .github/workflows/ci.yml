@@ -8,7 +8,7 @@ on:
     branches:
       - '*'
   schedule:
-    - cron: '0 0 * * MON'
+    - cron: '45 9 1 * *'
 
 env:
   CARGO_TERM_COLOR: always
@@ -20,7 +20,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        rust: [1.56, stable, nightly]
+        rust: [1.56, stable, beta, nightly]
 
     steps:
       - name: Checkout the Repository
@@ -47,7 +47,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        rust: [1.56, stable, nightly]
+        rust: [1.56, stable, beta, nightly]
 
     steps:
       - name: Checkout the Repository
@@ -93,7 +93,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        rust: [1.56, stable]
+        rust: [1.56, stable, beta]
 
     steps:
       - name: Checkout the Repository
